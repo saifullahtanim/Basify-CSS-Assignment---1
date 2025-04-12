@@ -1,0 +1,253 @@
+/* 1. Element Selectors */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: darkblue;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  /* 2. Class Selectors */
+  .nav-menu {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nav-link {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .content-block {
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-left: 5px solid coral;
+  }
+  
+  .sidebar {
+    background: #eee;
+    padding: 15px;
+    width: 200px;
+    float: right;
+  }
+  
+  /* 3. ID Selectors */
+  #main-header {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #main-footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    clear: both;
+  }
+  
+  /* 4. Attribute Selectors */
+  a[data-type="primary"] {
+    font-weight: bold;
+  }
+  
+  a[href^="mailto"] {
+    color: orange;
+  }
+  
+  /* 5. Pseudo-classes */
+  .nav-link:hover {
+    background-color: #555;
+    padding: 5px;
+  }
+  
+  article:nth-of-type(2) {
+    border-left: 5px solid coral;
+  }
+  
+  /* 6. Combinators */
+  /* Child combinator */
+  nav > a {
+    display: inline-block;
+  }
+  
+  /* Adjacent sibling combinator */
+  h2 + p {
+    font-style: italic;
+  }
+  
+  /* Descendant combinator */
+  .container article img {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  /* Style for article images */
+.content-block img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;       /* Keeps the image cropped nicely */
+    border-radius: 8px;      /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .content-block img:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+  }
+  /* ABOUT US - Highlighted Section */
+.about-highlight {
+    background-color: #fff;
+    padding: 30px;
+    border-left: 5px solid coral;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .about-highlight h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .about-highlight p {
+    color: #444;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  /* SERVICES - Highlighted Section */
+.service-highlight {
+    background-color: #fefefe;
+    padding: 30px;
+    border-left: 5px solid coral;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .service-highlight h2 {
+    color: #1a237e;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .service-highlight p {
+    color: #333;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  /* Portfolio Section */
+.portfolio-highlight {
+    background-color: #fefefe;
+    padding: 30px;
+    border-left: 5px solid seagreen;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .portfolio-highlight h2 {
+    color: #00695c;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-highlight p {
+    color: #444;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  
+  /* Contact Section */
+  .contact-highlight {
+    background-color: #fefefe;
+    padding: 30px;
+    border-left: 5px solid #ff7043;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .contact-highlight h2 {
+    color: #bf360c;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-highlight p {
+    color: #333;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  /* Contact Page Styling */
+.contact-highlight {
+    background-color: #ffffff;
+    padding: 30px;
+    border-left: 5px solid #ffa726;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .contact-highlight h2 {
+    color: #e65100;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-highlight p {
+    color: #444;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .contact-form button {
+    background-color: #ff7043;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #f4511e;
+  }
+  

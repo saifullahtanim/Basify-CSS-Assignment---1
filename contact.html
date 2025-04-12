@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="main-header">
+    <h1>Contact Us</h1>
+  </header>
+
+  <nav class="nav-menu">
+    <a href="index.html" class="nav-link" data-type="primary">Home</a>
+    <a href="about.html" class="nav-link" data-type="secondary">About</a>
+    <a href="services.html" class="nav-link" data-type="primary">Services</a>
+    <a href="portfolio.html" class="nav-link" data-type="secondary">Portfolio</a>
+    <a href="contact.html" class="nav-link" data-type="primary">Contact</a>
+  </nav>
+
+  <div class="container">
+    <main>
+      <article class="contact-highlight">
+        <h2>Let’s Talk</h2>
+        <p>
+          Got a question or want to work together? Fill out the form below — we’ll get back to you soon!
+        </p>
+        <form action="#" method="post" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </article>
+    </main>
+
+    <aside class="sidebar">
+      <ul>
+        <li>Email: info@example.com</li>
+        <li>Phone: +123 456 7890</li>
+        <li>Instagram: @ourcreativeteam</li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer id="main-footer">
+    <p>Contact us at: <a href="mailto:info@example.com">info@example.com</a></p>
+  </footer>
+</body>
+</html>
